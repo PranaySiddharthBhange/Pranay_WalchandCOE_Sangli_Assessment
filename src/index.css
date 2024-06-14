@@ -1,13 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* src/fonts.css */
+
+@font-face {
+  font-family: 'MaryRoman';
+  src: url('./fonts/MaryRoman.ttf') format('truetype');
+  font-weight: bold;
+  font-style: bold;
+}
+
+
+
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: 'MaryRoman',"Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+   
+  
+    width: 100%;
+    height: 100%;
+    background-image: repeating-radial-gradient(#f8f1f1ee 89%,#b9dae0 90%);
+    background-size: 50px 50px;
+  
+  
 }
