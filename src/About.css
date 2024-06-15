@@ -1,0 +1,16 @@
+.title {
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px; 
+    z-index:999;
+  }
+
+  .subtitle {
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    margin:1em;
+    top: 0%; 
+    z-index:999;
+  }

@@ -27,6 +27,24 @@ body {
     height: 100%;
     background-image: repeating-radial-gradient(#f8f1f1ee 89%,#b9dae0 90%);
     background-size: 50px 50px;
+    margin: 0px;
   
-  
+}
+/* Scrollbar Styles for Webkit browsers */
+::-webkit-scrollbar {
+  width: 2px; /* Adjust the width for vertical scrollbar */
+  height: 2px; /* Adjust the height for horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track color */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1c1b1b; /* Thumb color */
+  border-radius: 5px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Thumb color on hover */
 }

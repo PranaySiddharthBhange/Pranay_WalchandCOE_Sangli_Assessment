@@ -9,9 +9,11 @@ import gateway from "./assets/Gateway of India.png"
 import lotus from "./assets/Lotus.png";
 import sweets from "./assets/Sweets.png";
 import taj from "./assets/Taj Mahal.png";
+import Footer from "./Footer"
 import { Link } from "react-router-dom";
 import './Homepage.css'; 
 import { useEffect,useState } from 'react';
+
 const Homepage = () => {
 
     const images = [lion, elephant, diya, firecracker,gateway,lotus,sweets,taj];
@@ -33,7 +35,8 @@ const Homepage = () => {
         <div>
             <div className="container">
                 <div className="linksContainer">
-                    <Link to="/home" className="link">Home</Link>
+                    <Link to="/" className="link">Home</Link>
+                    <Link to="/about" className="link">About</Link>
                     <Link to="/products" className="link">Products</Link>
                     <Link to="/contacts" className="link">Contact</Link>
                 </div>
@@ -44,6 +47,7 @@ const Homepage = () => {
                 <img src={kite} alt="Kite" className="leftIcon" />
                 <img src={cow} alt="Cow" className="rightIcon" />
             </div>
+            <Footer></Footer>
         </div>
     );
 }

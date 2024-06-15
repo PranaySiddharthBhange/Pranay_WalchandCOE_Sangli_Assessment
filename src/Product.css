@@ -1,0 +1,79 @@
+.heading {
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+  }
+.subheading{
+    font-size: 1em;
+    text-align: center;
+}
+.gallery-container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .categories {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .categories button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    margin: 0 10px;
+    cursor: pointer;
+    padding: 10px 20px;
+  }
+  
+  .categories .active {
+    border-bottom: 2px solid #000;
+  }
+  
+  .products {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .product-list {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    margin-left: 20px;
+    margin-right: 20px;
+
+  }
+  
+  .product-item {
+    min-width: 200px;
+    margin: 0 30px;
+  }
+  
+  .product-item img {
+    width: 100%;
+    height: auto;
+  }
+
+
+  .scroll-btn {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  
+  .scroll-btn.left {
+    left: -10%;
+  }
+  
+  .scroll-btn.right {
+    right: -10%;
+  }
+  
