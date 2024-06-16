@@ -1,16 +1,84 @@
-.title {
-    font-size: 4em;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 20px; 
-    z-index:999;
-  }
+.about-our-crafts {
+  text-align: center;
+  padding: 45px;
 
-  .subtitle {
-    font-size: 1em;
-    font-weight: bold;
-    text-align: center;
-    margin:1em;
-    top: 0%; 
-    z-index:999;
+}
+.headabout{
+  font-size: 4em;
+  font-weight: bold;
+  text-align: center;
+  z-index:999;
+}
+
+.sub-abt-heading{
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.crafts-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.crafts-detail {
+  flex: 1 1 100px;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  background-color: rgba(181, 202, 220, 0.337);
+
+  background-size: 20px 20px;
+}
+
+.crafts-image {
+  flex: 1 1 300px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.crafts-image img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .crafts-details {
+    flex-direction: column;
+    align-items: center;
   }
+}
+.reviews-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  background-color: aliceblue;
+  margin-bottom: 20px;
+
+}
+
+
+.reviews {
+  display: inline-block;
+  padding:20px;
+  padding-left: 100%;
+  animation: marquee 60s linear infinite alternate;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.review {
+  display: inline-block;
+  margin-right: 50px; /* Space between reviews */
+  font-size: 18px;
+}

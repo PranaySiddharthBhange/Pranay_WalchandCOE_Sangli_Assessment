@@ -38,12 +38,10 @@ const Homepage = () => {
                     <Link to="/" className="link">Home</Link>
                     <Link to="/about" className="link">About</Link>
                     <Link to="/products" className="link">Products</Link>
-                    <Link to="/contacts" className="link">Contact</Link>
+                    <Link to="/contact" className="link">Contact</Link>
                 </div>
                 <p className="title">Discover the Beauty of Handmade Crafts</p>
-                {/* <img src={lion} alt="State Emblem of India" className="mainIcon" /> */}
-                <img src={images[currentImageIndex]} alt="Slideshow Image" className="mainIcon" />
-                
+                <img src={images[currentImageIndex]} alt="SlideshowImage" className="mainIcon" />
                 <img src={kite} alt="Kite" className="leftIcon" />
                 <img src={cow} alt="Cow" className="rightIcon" />
             </div>

@@ -1,0 +1,53 @@
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+img{
+    width: 50%;
+}
+.conthead{
+  font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+}
+.contsubhead{
+  font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .contact-container{
+        flex-direction: column;
+    }
+    img{
+        width: 100%;
+    }
+  }
+
+  .available-container {
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    margin-bottom: 20px;
+  
+  }
+  
+  
+  .availablelist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+    
+  }
+  .availablelist-indi:hover {
+    text-decoration: underline;
+  }
+  
+  
+  

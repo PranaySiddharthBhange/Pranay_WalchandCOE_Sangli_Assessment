@@ -1,0 +1,47 @@
+/* src/FAQComponent.css */
+.faq-container {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.left-panel {
+    flex: 1;
+    background-color: aliceblue;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-option {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.right-panel {
+    flex: 2;
+    padding: 20px;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    background-color:aliceblue;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.faq-answer {
+    padding: 10px;
+    background-color:aliceblue;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
