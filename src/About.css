@@ -109,8 +109,8 @@ p {
 
 /* Keyframes for marquee animation */
 @keyframes marquee {
-  0% { transform: translateX(-100%); } /* Start off-screen to the left */
-  100% { transform: translateX(0); } /* End at the original position */
+  0% { transform: translateX(0); } /* Start off-screen to the left */
+  100% { transform: translateX(-100%); } /* End at the original position */
 }
 
 /* Styles for individual review */

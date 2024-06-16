@@ -17,7 +17,7 @@ const FAQComponent = () => {
                 <div className="contact-option">📞 Book a demo</div>
             </div>
             <div className="right-panel">
-                <h2>Frequently asked questions</h2>
+                <h2 className='contsubhead'>Frequently asked questions</h2>
                 <div className="faq-item">
                     <div className="faq-question" onClick={() => toggleFAQ(0)}>
                         How does it work? {activeIndex === 0 ? '-' : '+'}
