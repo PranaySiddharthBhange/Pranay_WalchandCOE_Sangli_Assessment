@@ -1,70 +1,127 @@
-# Getting Started with Create React App
+# Handmade Heaven Website
+Email : op.pranay.bhange@gmail.com
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+College Mail: pranay.bhange@walchandsangli.ac.in
+## Live Website
 
-## Available Scripts
+You can view the live website [here](https://www.your-website-url.com).
 
-In the project directory, you can run:
+Docker image : ``docker push pranaybhange/handmadeheaven``
 
-### `npm start`
+Run Docker image : ``docker run -p 3000:3000 pranaybhange/handmadeheaven``
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Technology Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The technology stack used for this project includes:
 
-### `npm run build`
+- **ReactJS:** Frontend library for building user interfaces.
+- **HTML/CSS:** Structure, styling, and layout of web pages.
+- **JavaScript:** Programming language for interactive functionality.
+- **Node.js:** Backend JavaScript runtime environment.
+- **EmailJS:** Library for sending emails from JavaScript/Node.js applications.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Docker:** Containerization for deployment consistency.
+  
+## Project Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The project structure is organized as follows:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Each component and section of the website has its own README file located within their respective folders (`Products/`, etc.) to provide detailed explanations of their implementation.
 
-### `npm run eject`
+```
+|-- public/           # Static assets and index.html
+|-- src/              # Source code directory
+    |-- assets/       # Images, icons, and other assets
+    |-- App.js        # Main application component
+    |-- index.js      # Entry point
+    |-- Homepage
+    |-- Products
+    |-- About
+    |-- Contact
+    |-- Homepage       
+|-- README.md         # Global README file (you are here)
+|-- Dockerfile        # Dockerfile for containerization
+|-- package.json      # Node.js dependencies and scripts
+|-- .dockerignore     # Docker ignore file
+|-- .gitignore        # Git ignore file
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Here's how your README can be structured to include the tasks you've completed:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Tasks Completed
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- ✅ **HTML/CSS**:
+  
 
-## Learn More
+- ✅ **JavaScript**:
+  
+- ✅ **Responsiveness**:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- ✅ **Bonus Task (Optional : Done)**:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## Features of website
+- Navigation menu
+- Featured section showcasing products with images and brief descriptions
+- About section introducing the business and its mission
+- Contact section with a form for customers to submit inquiries (name, email, message)
+- Footer with social media links (Facebook, Instagram, Twitter)
+- Responsive design for seamless adaptation across desktop, tablet, and mobile devices
+- Form validation for the contact form:
+Name field must not be empty.
+Email field must be a valid email address format.
+Message field must not be empty.
+- Implementation of a simple image slider for the featured product section
+- Docker containerization for deployment 
+- Integration of social media icons with links to corresponding profiles
+- FAQ section with expandable questions and answers about products and services
+- Styling with CSS to ensure visual consistency and appealing design
+- Use of React.js for interactive components and dynamic content rendering
+Optimization for performance and user experience, including load times and smooth navigation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Optimization
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+#### Image Optimization
+Images were optimized to balance quality and file size:
+- **Resizing and Compression:** Resized images to appropriate dimensions and compressed them to reduce file size without compromising visual quality.
+- **Lazy Loading:** Implemented lazy loading for images below the fold to defer loading until they are needed, improving initial page load times.
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Additional Features and Enhancements that can be done
 
-### Deployment
+1. **Search Functionality**
+   - Implement a search bar to allow users to search for specific products or content on the website.
+   - Use filtering and sorting options to refine search results based on categories, price range, etc.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+2. **Product Reviews and Ratings**
+   - Enable customers to leave reviews and ratings for products, fostering trust and helping future buyers make informed decisions.
+   - Implement a star rating system and display aggregated ratings on product pages.
 
-### `npm run build` fails to minify
+4. **Live Chat Support**
+   - Integrate a live chat feature to provide real-time customer support and assistance.
+   - Offer chatbot functionalities for handling common queries and directing users to relevant information.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+5. **Multi-Language Support**
+   - Implement multi-language capabilities to cater to a diverse audience and expand the website's reach globally.
+   - Provide language selection options and ensure seamless translation of content across all pages.
+
+## References and Assets for UI/UX
+Homepage and 3D Assets : https://www.figma.com/community/file/1331643644443517630
+
+Form UI :
+https://dribbble.com/shots/18559477-Contact-form-Mattered
+
+Slideshow : https://dribbble.com/shots/9647724-TWC-Features-Section
+
+Gradient : https://cssgradient.io/
+
+Product Images : https://unsplash.com/
