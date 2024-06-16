@@ -12,43 +12,44 @@ const FAQComponent = () => {
     return (
         <div className="faq-container">
             <div className="left-panel">
-                <div className="contact-option">💬 Contact live chat support</div>
-                <div className="contact-option">🔍 Visit help center</div>
-                <div className="contact-option">📞 Book a demo</div>
+                <div className="contact-option" >📧 op.pranay.bhange@gmail.com</div>
+                <div className="contact-option">🏡 Walchand College of Engineering Sangli</div>
+                <div className="contact-option">📞 +91 9699684544</div>
             </div>
             <div className="right-panel">
-                <h2 className='contsubhead'>Frequently asked questions</h2>
-                <div className="faq-item">
-                    <div className="faq-question" onClick={() => toggleFAQ(0)}>
-                        How does it work? {activeIndex === 0 ? '-' : '+'}
-                    </div>
-                    {activeIndex === 0 && <div className="faq-answer">Once you register, one of our tax specialists who is keen to specific regulations and tax laws of your country, will contact you for onboarding. It includes registering you as a company and sorting out your current finances.</div>}
-                </div>
-                <div className="faq-item">
-                    <div className="faq-question" onClick={() => toggleFAQ(1)}>
-                        Do you have any discounts? {activeIndex === 1 ? '-' : '+'}
-                    </div>
-                    {activeIndex === 1 && <div className="faq-answer">Yes, we offer discounts for ...</div>}
-                </div>
-                <div className="faq-item">
-                    <div className="faq-question" onClick={() => toggleFAQ(2)}>
-                        My clients are from another country. How does it affect my taxes? {activeIndex === 2 ? '-' : '+'}
-                    </div>
-                    {activeIndex === 2 && <div className="faq-answer">If your clients are from another country, ...</div>}
-                </div>
-                <div className="faq-item">
-                    <div className="faq-question" onClick={() => toggleFAQ(3)}>
-                        Can I register in the middle of the year? {activeIndex === 3 ? '-' : '+'}
-                    </div>
-                    {activeIndex === 3 && <div className="faq-answer">Yes, you can register at any time of the year...</div>}
-                </div>
-                <div className="faq-item">
-                    <div className="faq-question" onClick={() => toggleFAQ(4)}>
-                        What's the cancellation policy? {activeIndex === 4 ? '-' : '+'}
-                    </div>
-                    {activeIndex === 4 && <div className="faq-answer">Our cancellation policy is...</div>}
-                </div>
-            </div>
+    <h2 className='faqsubhead'>Frequently asked questions</h2>
+    <div className="faq-item">
+        <div className="faq-question" onClick={() => toggleFAQ(0)}>
+            What types of handcrafted artifacts do you offer? {activeIndex === 0 ? '-' : '+'}
+        </div>
+        {activeIndex === 0 && <div className="faq-answer">We offer a wide range of handcrafted artifacts including pottery, jewelry, textiles, woodwork, and more.</div>}
+    </div>
+    <div className="faq-item">
+        <div className="faq-question" onClick={() => toggleFAQ(1)}>
+            Are your handcrafted artifacts made by local artisans? {activeIndex === 1 ? '-' : '+'}
+        </div>
+        {activeIndex === 1 && <div className="faq-answer">Yes, all our handcrafted artifacts are made by skilled local artisans, preserving traditional craftsmanship.</div>}
+    </div>
+    <div className="faq-item">
+        <div className="faq-question" onClick={() => toggleFAQ(2)}>
+            Do you offer customizable options for handcrafted artifacts? {activeIndex === 2 ? '-' : '+'}
+        </div>
+        {activeIndex === 2 && <div className="faq-answer">Yes, we provide customization services for certain artifacts. Please contact us for more details.</div>}
+    </div>
+    <div className="faq-item">
+        <div className="faq-question" onClick={() => toggleFAQ(3)}>
+            How can I care for my handcrafted artifacts? {activeIndex === 3 ? '-' : '+'}
+        </div>
+        {activeIndex === 3 && <div className="faq-answer">We recommend following specific care instructions provided with each artifact to ensure their longevity and beauty.</div>}
+    </div>
+    <div className="faq-item">
+        <div className="faq-question" onClick={() => toggleFAQ(4)}>
+            Do you offer international shipping for your handcrafted artifacts? {activeIndex === 4 ? '-' : '+'}
+        </div>
+        {activeIndex === 4 && <div className="faq-answer">Yes, we ship our handcrafted artifacts internationally. Shipping rates may vary depending on the destination.</div>}
+    </div>
+</div>
+
         </div>
     );
 };

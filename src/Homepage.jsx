@@ -12,7 +12,6 @@ import sweets from "./assets/Sweets.png";
 import taj from "./assets/Taj Mahal.png";
 import Footer from "./Footer";
 import './Homepage.css';
-
 const Homepage = () => {
     // Array of images to be used in the slideshow
     const images = [lion, elephant, diya, firecracker, gateway, lotus, sweets, taj];

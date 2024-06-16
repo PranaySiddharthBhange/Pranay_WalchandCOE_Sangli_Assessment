@@ -6,12 +6,14 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa";
 import kite from "./assets/Kite.png";
 import cow from "./assets/Cow.png";
-
+import Navbar from './Navbar';
 // Functional component to display information about the crafts
 const AboutOurCrafts = () => {
   return (
     <>
-     <img src={kite} alt="Kite" className="leftIcon-about" />
+      <Navbar></Navbar>
+
+      <img src={kite} alt="Kite" className="leftIcon-about" />
       <div className="about-our-crafts">
         <h1 className='headabout'>About Our Crafts</h1>
         <p>
@@ -66,7 +68,7 @@ const AboutOurCrafts = () => {
               <h2>Handmade Haven</h2>
             </div>
             <ul style={{ display: 'flex', listStyleType: 'none', padding: 0, margin: 0 }}>
-            <li style={{ marginRight: '20px' }}>
+              <li style={{ marginRight: '20px' }}>
                 <Link to='/'>Home</Link>
               </li>
               <li style={{ marginRight: '20px' }}>

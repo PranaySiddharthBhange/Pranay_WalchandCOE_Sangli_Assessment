@@ -5,11 +5,12 @@ import { FaInstagram, FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import './Product.css';
 import './Footer.css';
+import Navbar from './Navbar';
+
 import { products } from './data';
 import kite from "./assets/Kite.png";
 import AllProducts from './AllProducts'
 const categories = ["Ceramics", "Leather", "Toys", "Décor"];
-
 const Product = () => {
     const [selectedCategory, setSelectedCategory] = useState("Ceramics");
 
@@ -27,6 +28,8 @@ const Product = () => {
 
     return (
         <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+                  <Navbar></Navbar>
+
             <img src={kite} alt="Kite" className="leftIcon-about" />
             <div style={{ flex: 1 }}>
                 <div className="gallery-container">

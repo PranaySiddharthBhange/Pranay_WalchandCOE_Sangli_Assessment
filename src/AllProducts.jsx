@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { products } from './data';
-import './AllProducts.css'; 
+import './AllProducts.css';
+
+// Lazy load the ProductCard component
+const ProductCard = React.lazy(() => import('./ProductCard'));
 
 const AllProducts = () => {
     // Shuffle the products array to display them in random order
@@ -12,14 +15,14 @@ const AllProducts = () => {
         <div className="all-products-container">
             <p className="all-heading">All Products</p>
             <div className="all-products">
-                {displayedProducts.map(product => (
-                    <div key={product.id} className="all-product-card">
-                        <img src={product.url} alt={product.description} className="all-product-image" />
-                        <div className="all-product-info">
-                            <p className="all-product-description">{product.description}</p>
-                        </div>
-                    </div>
-                ))}
+                <Suspense fallback={<div className="loading-placeholder">Loading...</div>}>
+                    {displayedProducts.map(product => (
+                        <ProductCard 
+                            key={product.id} 
+                            product={product} 
+                        />
+                    ))}
+                </Suspense>
             </div>
         </div>
     );

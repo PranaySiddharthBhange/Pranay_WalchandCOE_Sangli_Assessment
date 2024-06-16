@@ -1,25 +1,39 @@
+
+import c1 from './assets/Products/Ceramics/1.jpg';
+import c2 from './assets/Products/Ceramics/2.jpg';
+import c3 from './assets/Products/Ceramics/3.jpg';
+import c4 from './assets/Products/Ceramics/4.jpg';
+import c5 from './assets/Products/Ceramics/5.jpg';
+import c6 from './assets/Products/Ceramics/6.jpg';
+import c7 from './assets/Products/Ceramics/7.jpg';
+import c8 from './assets/Products/Ceramics/8.jpg';
+import c9 from './assets/Products/Ceramics/9.jpg';
+import c10 from './assets/Products/Ceramics/10.jpg';
+import L2 from './assets/Products/Leather/4.jpg';
+
+
 export const products = [
-    { id: 1, url: "https://picsum.photos/200/300", description: "Description 1", category: "Ceramics" },
-    { id: 2, url: "https://picsum.photos/200/300", description: "Description 2", category: "Ceramics" },
-    { id: 3, url: "https://picsum.photos/200/300", description: "Description 3", category: "Ceramics" },
-    { id: 4, url: "https://picsum.photos/200/300", description: "Description 4", category: "Ceramics" },
-    { id: 5, url: "https://picsum.photos/200/300", description: "Description 5", category: "Ceramics" },
-    { id: 6, url: "https://picsum.photos/200/300", description: "Description 6", category: "Ceramics" },
-    { id: 7, url: "https://picsum.photos/200/300", description: "Description 7", category: "Ceramics" },
-    { id: 8, url: "https://picsum.photos/200/300", description: "Description 8", category: "Ceramics" },
-    { id: 9, url: "https://picsum.photos/200/300", description: "Description 9", category: "Ceramics" },
-    { id: 10, url: "https://picsum.photos/200/300", description: "Description 10", category: "Ceramics" },
+  { id: 1, url: c1, description: "Ceramic Pot", category: "Ceramics" },
+  { id: 2, url: c2, description: "Tea Cup", category: "Ceramics" },
+    { id: 3, url: c3, description: "Tea Cup Heavy", category: "Ceramics" },
+    { id: 4, url: c4, description: "Vase", category: "Ceramics" },
+    { id: 5, url: c5, description: "Vase Combination", category: "Ceramics" },
+    { id: 6, url: c6, description: "Decorative Vase", category: "Ceramics" },
+    { id: 7, url: c7, description: "Plant Vase 7", category: "Ceramics" },
+    { id: 8, url: c8, description: "Description 8", category: "Ceramics" },
+    { id: 9, url: c9, description: "Description 9", category: "Ceramics" },
+    { id: 10, url: c10, description: "Description 10", category: "Ceramics" },
    
-    { id: 11, url: "https://picsum.photos/200/300", description: "Description 11", category: "Leather" },
-    { id: 12, url: "https://picsum.photos/200/300", description: "Description 12", category: "Leather" },
-    { id: 13, url: "https://picsum.photos/200/300", description: "Description 13", category: "Leather" },
-    { id: 14, url: "https://picsum.photos/200/300", description: "Description 14", category: "Leather" },
-    { id: 15, url: "https://picsum.photos/200/300", description: "Description 15", category: "Leather" },
-    { id: 16, url: "https://picsum.photos/200/300", description: "Description 16", category: "Leather" },
-    { id: 17, url: "https://picsum.photos/200/300", description: "Description 17", category: "Leather" },
-    { id: 18, url: "https://picsum.photos/200/300", description: "Description 18", category: "Leather" },
-    { id: 19, url: "https://picsum.photos/200/300", description: "Description 19", category: "Leather" },
-    { id: 20, url: "https://picsum.photos/200/300", description: "Description 20", category: "Leather" },
+    { id: 11, url: L2, description: "Description 11", category: "Leather" },
+    { id: 12, url: L2, description: "Description 12", category: "Leather" },
+    { id: 13, url: L2, description: "Description 13", category: "Leather" },
+    { id: 14, url: L2, description: "Description 14", category: "Leather" },
+    { id: 15, url: L2, description: "Description 15", category: "Leather" },
+    { id: 16, url: L2, description: "Description 16", category: "Leather" },
+    { id: 17, url: L2, description: "Description 17", category: "Leather" },
+    { id: 18, url: L2, description: "Description 18", category: "Leather" },
+    { id: 19, url: L2, description: "Description 19", category: "Leather" },
+    { id: 20, url: L2, description: "Description 20", category: "Leather" },
 
     { id: 21, url: "https://picsum.photos/200/300", description: "Description 21", category: "Toys" },
     { id: 22, url: "https://picsum.photos/200/300", description: "Description 22", category: "Toys" },
