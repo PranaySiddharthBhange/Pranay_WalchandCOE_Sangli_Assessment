@@ -1,0 +1,43 @@
+.all-products-container {
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+    margin: 30px 50px;
+}
+
+.all-heading {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-bottom: 30px;
+
+}
+
+.all-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.all-product-card {
+    border: 1px solid aliceblue;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.all-product-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid aliceblue;
+}
+
+.all-product-info {
+    padding: 10px;
+}
+
+.all-product-description {
+    font-size: 16px;
+    margin: 0;
+}
