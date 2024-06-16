@@ -1,52 +1,57 @@
-/* src/Footer.css */
-
+/* Styles for the footer element */
 .footer {
-    margin-top: 20px;
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
+  margin-top: 20px; /* Space above the footer */
+  background-color: #333; /* Dark background color */
+  color: #fff; /* White text color */
+  padding: 20px 0; /* Vertical padding */
+  text-align: center; /* Centered text alignment */
+}
+
+/* Styles for the footer container */
+.footer-container {
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Column direction for smaller screens */
+  align-items: center; /* Center items horizontally */
+}
+
+/* Styles for the company name heading */
+.footer-company-name h2 {
+  margin: 0; /* Remove default margin */
+}
+
+/* Styles for the social media section heading */
+.footer-social-media h3 {
+  margin: 10px 0; /* Vertical margin */
+}
+
+/* Styles for the social icons container */
+.social-icons {
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Center icons horizontally */
+  gap: 15px; /* Space between icons */
+}
+
+/* Styles for the social icon links */
+.social-icons a {
+  color: #fff; /* White color for icons */
+  font-size: 24px; /* Icon size */
+  text-decoration: none; /* Remove underline from links */
+}
+
+/* Hover effect for social icon links */
+.social-icons a:hover {
+  color: #ddd; /* Light gray color on hover */
+}
+
+/* Responsive adjustments for screens wider than 768px */
+@media (min-width: 768px) {
   .footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row; /* Row direction for larger screens */
+    justify-content: space-between; /* Space between company name and social media sections */
+    padding: 0 50px; /* Horizontal padding */
   }
-  
-  .footer-company-name h2 {
-    margin: 0;
+
+  .footer-company-name, .footer-social-media {
+    flex: 1; /* Each section takes equal space */
   }
-  
-  .footer-social-media h3 {
-    margin: 10px 0;
-  }
-  
-  .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-  }
-  
-  .social-icons a {
-    color: #fff;
-    font-size: 24px;
-    text-decoration: none;
-  }
-  
-  .social-icons a:hover {
-    color: #ddd;
-  }
-  
-  @media (min-width: 768px) {
-    .footer-container {
-      flex-direction: row;
-      justify-content: space-between;
-      padding: 0 50px;
-    }
-  
-    .footer-company-name, .footer-social-media {
-      flex: 1;
-    }
-  }
-  
+}

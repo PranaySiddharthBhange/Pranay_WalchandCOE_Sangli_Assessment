@@ -24,8 +24,8 @@ const Contact = () => {
 
 
             </div>
-            <h2 class='sub-abt-heading'>Availabe On</h2>
-            <div class="available-container">
+            <h2 className='sub-abt-heading'>Availabe On</h2>
+            <div className="available-container">
                 <div className='availablelist'>
                     <Link className='availablelist-indi' to="\">Amazon</Link>
                     <Link className='availablelist-indi' to="\">Flipkart</Link>

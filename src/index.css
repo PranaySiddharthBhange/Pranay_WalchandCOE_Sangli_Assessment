@@ -1,50 +1,55 @@
+/* Tailwind CSS base, components, and utilities imports */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-/* src/fonts.css */
-
+/* Custom font face definition */
 @font-face {
-  font-family: 'MaryRoman';
-  src: url('./fonts/MaryRoman.ttf') format('truetype');
-  font-weight: bold;
-  font-style: bold;
+  font-family: 'MaryRoman'; /* Font family name */
+  src: url('./fonts/MaryRoman.ttf') format('truetype'); /* Font file path and format */
+  font-weight: bold; /* Font weight */
+  font-style: bold; /* Font style */
 }
 
-
-
-
+/* General body styles */
 body {
-  font-family: 'MaryRoman',"Segoe UI", "Roboto", "Oxygen",
+  font-family: 'MaryRoman', "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-   
+    sans-serif; /* Fallback font stack for better compatibility */
+  -webkit-font-smoothing: antialiased; /* Smoothing for WebKit browsers */
+  -moz-osx-font-smoothing: grayscale; /* Smoothing for Firefox on macOS */
   
-    width: 100%;
-    height: 100%;
-    background-image: repeating-radial-gradient(#f8f1f1ee 89%,#b9dae0 90%);
-    background-size: 50px 50px;
-    margin: 0px;
-  
+  width: 100%; /* Full width of the viewport */
+  height: 100%; /* Full height of the viewport */
+  background-image: repeating-radial-gradient(#f8f1f1ee 89%, #b9dae0 90%); /* Background with repeating radial gradient */
+  background-size: 50px 50px; /* Size of the background pattern */
+  margin: 0px; /* Remove default margin */
 }
-/* Scrollbar Styles for Webkit browsers */
+
+/*Background adjustments for mobile*/
+
+@media (max-width: 576px) {
+  body{
+    background-image: repeating-radial-gradient(#f8f1f1ee 89.3%, #b9dae0 90%); /* Background with repeating radial gradient */
+
+  }
+}
+
+/* Custom scrollbar styles for WebKit browsers */
 ::-webkit-scrollbar {
-  width: 2px; /* Adjust the width for vertical scrollbar */
-  height: 2px; /* Adjust the height for horizontal scrollbar */
+  width: 2px; /* Width of vertical scrollbar */
+  height: 2px; /* Height of horizontal scrollbar */
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; /* Track color */
+  background: #f1f1f1; /* Color of the scrollbar track */
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1c1b1b; /* Thumb color */
-  border-radius: 5px; /* Rounded corners */
+  background: #1c1b1b; /* Color of the scrollbar thumb */
+  border-radius: 5px; /* Rounded corners for the thumb */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; /* Thumb color on hover */
+  background: #555; /* Thumb color when hovered */
 }
