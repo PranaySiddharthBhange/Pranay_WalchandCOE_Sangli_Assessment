@@ -1,0 +1,68 @@
+.container {
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: center; /* Center align text inside the container */
+}
+
+/* Styles for the form box */
+.form-box {
+    width: 70%; /* Set the width of the form box */
+    border: 1px solid #ccc; /* Add a border with light gray color */
+    border-radius: 5px; /* Rounded corners for the box */
+    padding: 20px; /* Padding inside the box */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for a subtle 3D effect */
+    background-color: white; /* White background color */
+}
+
+/* Styles for the form */
+.form {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack form items vertically */
+    align-items: center; /* Center-align items horizontally */
+}
+
+/* Styles for each field container */
+.fieldContainer {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack field elements vertically */
+    margin-bottom: 15px; /* Space at the bottom of each field */
+    width: 100%; /* Full width within its container */
+}
+
+/* Styles for labels above input fields */
+.label {
+    margin-bottom: 5px; /* Space below each label */
+    text-align: left; /* Left-align text */
+}
+
+/* Styles for input fields */
+.input {
+    padding: 10px; /* Padding inside each input field */
+    border-radius: 5px; /* Rounded corners for the input */
+    border: 1px solid #ccc; /* Border with light gray color */
+    width: 100%; /* Full width within its container */
+    font-family: 'Courier New', Courier, monospace; /* Specific font family */
+}
+
+/* Styles for the submit button */
+.button {
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners for the button */
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center-align items vertically */
+}
+
+/* Styles for the arrow icon next to the button text */
+.arrow {
+    margin-left: 10px; /* Space to the left of the arrow */
+}
+
+/* Styles for error messages */
+.error {
+    color: red; /* Red text color for errors */
+    margin-top: 5px; /* Space at the top of each error message */
+    text-align: left; /* Left-align text */
+}

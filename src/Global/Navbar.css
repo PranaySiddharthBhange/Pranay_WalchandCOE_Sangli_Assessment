@@ -1,0 +1,45 @@
+.navbar {
+  position: fixed; /* Fixed positioning to stay at the top-right corner */
+  top: 0;
+  right: 0;
+  z-index: 999; /* Ensures it appears above other content */
+  background-color: #ffffff00; /* Transparent background initially */
+  padding: 10px; /* Padding around the navbar */
+}
+
+/* Styles for the hamburger menu icon */
+.hamburger-icon {
+  cursor: pointer; /* Cursor changes to pointer on hover */
+}
+
+/* Menu container styles */
+.menu {
+  position: absolute; /* Absolute positioning relative to the navbar */
+  top: 40px; /* Distance from the top */
+  right: 0; /* Aligned to the right side of the navbar */
+  background-color: #ffffff; /* White background */
+  border: 1px solid #cccccc; /* Light gray border */
+  padding: 10px; /* Padding inside the menu */
+}
+
+/* Styles for the list inside the menu */
+.menu ul {
+  list-style-type: none; /* Removes default list styles */
+  padding: 0; /* Removes default padding */
+}
+
+/* Styles for list items inside the menu */
+.menu ul li {
+  margin-bottom: 10px; /* Bottom margin between list items */
+}
+
+/* Styles for links inside the menu */
+.menu ul li a {
+  color: #333333; /* Text color */
+  text-decoration: none; /* Removes underline */
+}
+
+/* Hover effect for links inside the menu */
+.menu ul li a:hover {
+  color: #fdac34; /* Yellow color on hover */
+}

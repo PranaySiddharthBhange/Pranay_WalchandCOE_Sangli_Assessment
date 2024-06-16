@@ -1,0 +1,89 @@
+/* Heading styles */
+.heading {
+  font-size: 4em; /* Large font size */
+  font-weight: bold; /* Bold text */
+  text-align: center; /* Center align */
+  margin-top: 20px; /* Top margin */
+}
+
+/* Subheading styles */
+.subheading {
+  font-size: 1em; /* Normal font size */
+  text-align: center; /* Center align */
+}
+
+/* Container for the gallery */
+.gallery-container {
+  width: 80%; /* 80% width of its container */
+  margin: auto; /* Center align horizontally */
+  text-align: center; /* Center align text */
+}
+
+/* Navigation categories */
+.categories {
+  display: flex; /* Flex layout */
+  justify-content: center; /* Center items horizontally */
+  margin-bottom: 30px; /* Bottom margin */
+}
+
+.categories button {
+  background: none; /* Transparent background */
+  border: none; /* No border */
+  font-size: 16px; /* Font size */
+  margin: 0 10px; /* Margin around each button */
+  cursor: pointer; /* Pointer cursor */
+  padding: 10px 20px; /* Padding inside the button */
+}
+
+.categories .active {
+  border-bottom: 2px solid #000; /* Bottom border for active category */
+}
+
+/* Products section */
+.products {
+  position: relative; /* Relative positioning */
+  display: flex; /* Flex layout */
+  align-items: center; /* Center align items vertically */
+}
+
+/* Product list with horizontal scroll */
+.product-list {
+  display: flex; /* Flex layout */
+  overflow-x: auto; /* Horizontal overflow with scrollbar */
+  scroll-behavior: smooth; /* Smooth scrolling behavior */
+  margin-top:20px; /* Margin around the product list */
+  margin-bottom:20px; /* Margin around the product list */
+
+}
+
+/* Individual product item */
+.product-item {
+  min-width: 200px; /* Minimum width of each product item */
+  margin: 0 15px; /* Margin around each product item */
+}
+
+.product-item img {
+  width: 100%; /* Full width of image */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 15px;
+}
+
+/* Scroll buttons for product list */
+.scroll-btn {
+  background: none; /* Transparent background */
+  border: none; /* No border */
+  font-size: 30px; /* Large font size */
+  cursor: pointer; /* Pointer cursor */
+  position: absolute; /* Absolute positioning */
+  top: 50%; /* Align at vertical center */
+  transform: translateY(-50%); /* Adjust for vertical centering */
+  z-index: 1; /* Ensure visibility above product list */
+}
+
+.scroll-btn.left {
+  left: -10%; /* Position at left edge with offset */
+}
+
+.scroll-btn.right {
+  right: -10%; /* Position at right edge with offset */
+}

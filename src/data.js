@@ -1,4 +1,4 @@
-
+// Import images for ceramics category
 import c1 from './assets/Products/Ceramics/1.jpg';
 import c2 from './assets/Products/Ceramics/2.jpg';
 import c3 from './assets/Products/Ceramics/3.jpg';
@@ -9,12 +9,17 @@ import c7 from './assets/Products/Ceramics/7.jpg';
 import c8 from './assets/Products/Ceramics/8.jpg';
 import c9 from './assets/Products/Ceramics/9.jpg';
 import c10 from './assets/Products/Ceramics/10.jpg';
+
+// Import image for leather category (reusing L2 for demo purposes)
 import L2 from './assets/Products/Leather/4.jpg';
 
-
+// Defined array of product objects
 export const products = [
-  { id: 1, url: c1, description: "Ceramic Pot", category: "Ceramics" },
-  { id: 2, url: c2, description: "Tea Cup", category: "Ceramics" },
+   
+  // Ceramics category
+
+    { id: 1, url: c1, description: "Ceramic Pot", category: "Ceramics" },
+    { id: 2, url: c2, description: "Tea Cup", category: "Ceramics" },
     { id: 3, url: c3, description: "Tea Cup Heavy", category: "Ceramics" },
     { id: 4, url: c4, description: "Vase", category: "Ceramics" },
     { id: 5, url: c5, description: "Vase Combination", category: "Ceramics" },
@@ -23,7 +28,9 @@ export const products = [
     { id: 8, url: c8, description: "Description 8", category: "Ceramics" },
     { id: 9, url: c9, description: "Description 9", category: "Ceramics" },
     { id: 10, url: c10, description: "Description 10", category: "Ceramics" },
-   
+      
+    // Leather category (reusing L2 image for demo)
+
     { id: 11, url: L2, description: "Description 11", category: "Leather" },
     { id: 12, url: L2, description: "Description 12", category: "Leather" },
     { id: 13, url: L2, description: "Description 13", category: "Leather" },
@@ -34,6 +41,8 @@ export const products = [
     { id: 18, url: L2, description: "Description 18", category: "Leather" },
     { id: 19, url: L2, description: "Description 19", category: "Leather" },
     { id: 20, url: L2, description: "Description 20", category: "Leather" },
+      
+    // Placeholder images for other categories
 
     { id: 21, url: "https://picsum.photos/200/300", description: "Description 21", category: "Toys" },
     { id: 22, url: "https://picsum.photos/200/300", description: "Description 22", category: "Toys" },

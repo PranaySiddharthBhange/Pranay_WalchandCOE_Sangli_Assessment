@@ -1,0 +1,172 @@
+.container {
+  position: relative; /* Container is positioned relative to enable child positioning */
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  display: flex; /* Utilizes flexbox for layout */
+  justify-content: center; /* Centers child elements horizontally */
+  align-items: center; /* Centers child elements vertically */
+  overflow: hidden; /* Prevents overflow of content */
+}
+
+/* Styles for the title */
+.title {
+  font-size: 4em; /* Large font size for impactful title */
+  font-weight: bold; /* Bold text for emphasis */
+  text-align: center; /* Center aligns the title */
+  margin-bottom: 60vh; /* Extends margin to push title up, creating visual hierarchy */
+  z-index: 999; /* High z-index ensures title is above other elements */
+}
+
+/* Styles for the links container */
+.linksContainer {
+  position: absolute; /* Absolutely positioned for precise layout */
+  left: 10%; /* Positioned 10% from the left edge */
+  bottom: 30%; /* Positioned 30% from the bottom edge */
+  display: flex; /* Flexbox for alignment */
+  flex-direction: column; /* Arranges links vertically */
+  gap: 15px; /* Space between links */
+  z-index: 99; /* Ensures links are above certain elements */
+}
+
+/* Styles for the individual links */
+.link {
+  font-size: 1.8em; /* Large font size for clear readability */
+  text-decoration: none; /* Removes underline */
+  cursor: pointer; /* Pointer cursor on hover */
+  position: relative; /* Allows further positioning if necessary */
+}
+
+/* Hover effect for the links */
+.link:hover {
+  text-decoration: underline; /* Underlines links on hover for interactive feedback */
+  text-underline-offset: 5px; /* Adds offset to the underline for visual distinction */
+}
+
+/* Styles for the main icon */
+.mainIcon {
+  position: absolute; /* Absolutely positioned for layering */
+  bottom: -10%; /* Positioned slightly off-screen at the bottom */
+  width: 45%; /* Occupies 45% of the container's width */
+  height: auto; /* Maintains aspect ratio */
+  z-index: 2; /* Ensures icon appears above most elements */
+  transition: filter 0.5s ease; /* Smooth transition for hover effects */
+  background: rgb(63, 225, 251); /* Fallback background color */
+  background: radial-gradient(
+    circle,
+    rgba(63, 225, 251, 1) 0%, 
+    rgba(189, 230, 232, 1) 41%,
+    rgba(255, 255, 255, 0) 71%,
+    rgba(255, 255, 255, 0) 100%
+  ); /* Radial gradient background for visual appeal */
+}
+
+/* Styles for the left icon */
+.leftIcon {
+  position: absolute; /* Absolutely positioned for precise placement */
+  left: -2%; /* Positioned slightly off-screen on the left */
+  top: 20%; /* Positioned 20% from the top */
+  width: 15%; /* Occupies 15% of the container's width */
+  height: auto; /* Maintains aspect ratio */
+  transform: translateY(-50%) rotate(-30deg); /* Applies transformation for stylistic effect */
+  z-index: -99; /* Low z-index places icon behind other elements */
+  animation: kiteAnimation 5s ease-in-out infinite; /* Animation effect for continuous movement */
+}
+
+/* Styles for the right icon */
+.rightIcon {
+  position: absolute; /* Absolutely positioned for precise layout */
+  right: -2%; /* Positioned slightly off-screen on the right */
+  top: 65%; /* Positioned 65% from the top */
+  width: 20%; /* Occupies 20% of the container's width */
+  height: auto; /* Maintains aspect ratio */
+  z-index: 1; /* Ensures icon appears above the left icon */
+  animation: upAndDown 5s infinite; /* Animation effect for continuous movement */
+}
+
+/* Keyframes for kite animation */
+@keyframes kiteAnimation {
+  0% {
+    transform: translateY(-50%) rotate(-30deg); /* Initial position and rotation */
+  }
+  50% {
+    transform: translateY(-60%) rotate(-40deg); /* Midpoint position and rotation */
+  }
+  100% {
+    transform: translateY(-50%) rotate(-30deg); /* End position and rotation */
+  }
+}
+
+/* Keyframes for up and down animation */
+@keyframes upAndDown {
+  0% {
+    transform: translateY(0); /* Initial vertical position */
+  }
+  50% {
+    transform: translateY(-10%); /* Midpoint vertical position */
+  }
+  100% {
+    transform: translateY(0); /* Final vertical position */
+  }
+}
+
+/* Responsive adjustments for screen widths up to 768px */
+@media (max-width: 768px) {
+  .title {
+    font-size: 3em; /* Smaller font size for better readability */
+    margin-bottom: 30vh; /* Reduced margin for adjusted layout */
+  }
+
+  .link {
+    font-size: 1.5em; /* Smaller font size for mobile devices */
+  }
+
+  .mainIcon {
+    width: 60%; /* Increased width for better visibility */
+  }
+
+  .leftIcon {
+    width: 20%; /* Adjusted width for improved layout */
+    top: 14%; /* Adjusted top position for mobile view */
+  }
+
+  .rightIcon {
+    width: 25%; /* Adjusted width for improved layout */
+    top: -1%; /* Adjusted top position for mobile view */
+  }
+}
+
+/* Further responsive adjustments for screen widths up to 576px */
+@media (max-width: 576px) {
+  .title {
+    font-size: 2.5em; /* Smaller font size for smaller screens */
+    margin-bottom: 1vh; /* Minimal margin for compact layout */
+    margin-right: 20px; /* Added margin for better spacing */
+  }
+
+  .link {
+    font-size: 1.2em; /* Smaller font size for smallest screens */
+    padding: 10px; /* Added padding for easier tap targets */
+  }
+
+  .mainIcon {
+    width: 80%; /* Increased width for full-width display */
+    bottom: 1%; /* Adjusted bottom position for mobile view */
+  }
+
+  .leftIcon {
+    width: 35%; /* Adjusted width for improved layout */
+    top: 14%; /* Adjusted top position for mobile view */
+  }
+
+  .rightIcon {
+    width: 35%; /* Adjusted width for improved layout */
+    top: 3%; /* Adjusted top position for mobile view */
+  }
+
+  .linksContainer {
+    left: 5%; /* Adjusted left position for better alignment */
+    bottom: 70%; /* Adjusted bottom position for mobile view */
+    align-items: center; /* Centered alignment for mobile view */
+    flex-direction: row; /* Changed to row layout for mobile view */
+  }
+}

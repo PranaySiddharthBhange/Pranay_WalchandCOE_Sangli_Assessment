@@ -1,0 +1,70 @@
+/* Overall container for FAQ component */
+.faq-container {
+    display: flex; /* Flex container */
+    max-width: 1200px; /* Maximum width */
+    margin: auto; /* Center align horizontally */
+    padding: 20px; /* Padding around the component */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .faq-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+}
+
+/* Left panel containing contact information */
+.left-panel {
+    flex: 1; /* Take up one-third of the available space */
+    background-color: aliceblue; /* Light blue background */
+    padding: 20px; /* Padding inside the panel */
+    display: flex; /* Flex container */
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Spacing between items */
+}
+
+/* Heading for FAQ section */
+.faqsubhead {
+    font-size: 1.2em; /* Font size */
+    font-weight: bold; /* Bold font weight */
+    text-align: center; /* Center align text */
+    margin-left: 30px; /* Left margin */
+    margin-right: 30px; /* Right margin */
+}
+
+/* Styling for each contact option */
+.contact-option {
+    background-color: #fff; /* White background */
+    padding: 10px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    cursor: pointer; /* Pointer cursor */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Font family */
+}
+
+/* Right panel containing FAQ items */
+.right-panel {
+    flex: 2; /* Take up two-thirds of the available space */
+    padding: 20px; /* Padding inside the panel */
+}
+
+/* Styling for each FAQ item */
+.faq-item {
+    margin-bottom: 10px; /* Bottom margin between items */
+}
+
+/* Styling for FAQ question */
+.faq-question {
+    background-color: white; /* White background */
+    padding: 10px; /* Padding */
+    cursor: pointer; /* Pointer cursor */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Styling for FAQ answer */
+.faq-answer {
+    padding: 10px; /* Padding */
+    background-color: aliceblue; /* Light blue background */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}

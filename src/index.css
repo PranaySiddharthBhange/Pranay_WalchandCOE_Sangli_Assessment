@@ -1,4 +1,4 @@
-/* Tailwind CSS base, components, and utilities imports */
+/* Import Tailwind CSS base, components, and utilities */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,14 +8,14 @@
   font-family: 'MaryRoman'; /* Font family name */
   src: url('./fonts/MaryRoman.ttf') format('truetype'); /* Font file path and format */
   font-weight: bold; /* Font weight */
-  font-style: bold; /* Font style */
+  font-style: normal; /* Font style */
 }
 
 /* General body styles */
 body {
   font-family: 'MaryRoman', "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif; /* Fallback font stack for better compatibility */
+    sans-serif; /* Font stack with fallbacks for better compatibility */
   -webkit-font-smoothing: antialiased; /* Smoothing for WebKit browsers */
   -moz-osx-font-smoothing: grayscale; /* Smoothing for Firefox on macOS */
   
@@ -23,22 +23,23 @@ body {
   height: 100%; /* Full height of the viewport */
   background-image: repeating-radial-gradient(#f8f1f1ee 89%, #b9dae0 90%); /* Background with repeating radial gradient */
   background-size: 50px 50px; /* Size of the background pattern */
-  margin: 0px; /* Remove default margin */
+  margin: 0; /* Remove default margin */
+  
+  /* Fluid typography for responsive design */
+  font-size: 16px; /* Base font size */
 }
 
-/*Background adjustments for mobile*/
-
+/* Background adjustments for mobile devices */
 @media (max-width: 576px) {
-  body{
-    background-image: repeating-radial-gradient(#f8f1f1ee 89.3%, #b9dae0 90%); /* Background with repeating radial gradient */
-
+  body {
+    background-image: repeating-radial-gradient(#f8f1f1ee 89.3%, #b9dae0 90%); /* Adjusted background for smaller screens */
   }
 }
 
 /* Custom scrollbar styles for WebKit browsers */
 ::-webkit-scrollbar {
-  width: 2px; /* Width of vertical scrollbar */
-  height: 2px; /* Height of horizontal scrollbar */
+  width: 6px; /* Width of vertical scrollbar */
+  height: 6px; /* Height of horizontal scrollbar */
 }
 
 ::-webkit-scrollbar-track {
@@ -52,4 +53,27 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555; /* Thumb color when hovered */
+  cursor: pointer;/*Cursor pointer when hover on scroll bar(used for scrolling functionality in product.css)*/
 }
+
+/* Accessibility enhancements */
+button, input, select, textarea {
+  font-family: inherit; /* Inherit font-family for better accessibility */
+}
+
+/* Animation and transition effects */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #2980b9;
+}
+
+/* Comments explain each section, emphasizing best practices and adjustments */

@@ -1,0 +1,121 @@
+/* Container for the About Our Crafts section */
+.about-our-crafts {
+  text-align: center; /* Center-align text */
+  padding: 45px; /* Adds padding around the container for better readability */
+}
+
+/* Styles for the main heading */
+.headabout {
+  font-size: 4em; /* Large font size for the main heading */
+  font-weight: bold; /* Applies bold font weight for emphasis */
+  text-align: center; /* Center-aligns the heading */
+  z-index: 999; /* Ensures the heading stays on top of other elements */
+}
+
+/* General paragraph styles */
+p {
+  margin-left: 10%; /* Adds left margin for paragraphs */
+  margin-right: 10%; /* Adds right margin for paragraphs */
+}
+
+/* Styles for the left icon (if any) */
+.leftIcon-about {
+  position: absolute; /* Absolutely positioned within its parent container */
+  left: -1%; /* Slightly off-screen on the left */
+  top: 15%; /* Positioned 15% from the top */
+  width: 180px; /* Fixed width for the icon */
+  height: auto; /* Maintains aspect ratio */
+  transform: translateY(-50%) rotate(-30deg); /* Applies a transformation to the icon */
+  z-index: -99; /* Low z-index to position it behind other elements */
+  animation: kiteAnimation 5s ease-in-out infinite; /* Applies kiteAnimation for continuous movement */
+}
+
+/* Styles for sub-headings */
+.sub-abt-heading {
+  font-size: 2em; /* Large font size for sub-headings */
+  font-weight: bold; /* Applies bold font weight for emphasis */
+  text-align: center; /* Center-aligns the sub-headings */
+  margin-bottom: 20px; /* Adds margin below the sub-headings */
+}
+
+/* Container for crafts details */
+.crafts-details {
+  display: flex; /* Uses flexbox for layout */
+  flex-wrap: wrap; /* Allows items to wrap within the container */
+  justify-content: center; /* Centers content horizontally */
+  margin-top: 20px; /* Adds margin at the top of the container */
+}
+
+/* Individual craft detail item */
+.crafts-detail {
+  flex: 1 1 100px; /* Flexible width and height with initial size */
+  margin: 20px; /* Adds margin around each detail item */
+  padding: 20px; /* Adds padding inside each detail item */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a light shadow for depth effect */
+  border-radius: 8px; /* Rounds the corners of the detail items */
+  background-color: aliceblue; /* Applies a light blue background color */
+}
+
+/* Hover effect for craft detail items */
+.crafts-detail:hover {
+  background-color: rgba(181, 202, 220, 0.337); /* Slightly darker background color on hover */
+}
+
+/* Container for the crafts image */
+.crafts-image {
+  flex: 1 1 300px; /* Flexible width and height with initial size */
+  margin: 10px; /* Adds margin around the image */
+  display: flex; /* Uses flexbox for layout */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  animation: upAndDown 5s infinite; /* Applies upAndDown animation for continuous movement */
+}
+
+/* Styles for the crafts image */
+.crafts-image img {
+  max-width: 80%; /* Sets the maximum width of the image to 80% */
+  height: auto; /* Maintains the aspect ratio of the image */
+  border-radius: 8px; /* Rounds the corners of the image */
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .crafts-details {
+    flex-direction: column; /* Stacks items vertically for smaller screens */
+    align-items: center; /* Centers items horizontally */
+  }
+  .leftIcon-about {
+    display: none; /* Hides the left icon on smaller screens */
+  }
+}
+
+/* Container for the reviews section */
+.reviews-container {
+  width: 100%; /* Sets the width to 100% */
+  overflow: hidden; /* Hides overflow content */
+  white-space: nowrap; /* Prevents text wrapping */
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+  background-color: aliceblue; /* Applies a light blue background color */
+  margin-bottom: 20px; /* Adds margin below the reviews container */
+}
+
+/* Styles for the reviews */
+.reviews {
+  display: inline-block; /* Displays as inline-block element */
+  padding: 20px; /* Adds padding inside the element */
+  padding-left: 100%; /* Creates initial padding on the left */
+  animation: marquee 60s linear infinite alternate; /* Applies marquee animation for continuous scrolling */
+}
+
+/* Keyframes for marquee animation */
+@keyframes marquee {
+  0% { transform: translateX(0); } /* Starts off-screen to the left */
+  100% { transform: translateX(-100%); } /* Ends at the original position */
+}
+
+/* Styles for individual review */
+.review {
+  display: inline-block; /* Displays as inline-block element */
+  margin-right: 50px; /* Adds margin between reviews */
+  font-size: 18px; /* Sets the font size for reviews */
+}

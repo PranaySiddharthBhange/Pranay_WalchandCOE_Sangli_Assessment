@@ -1,0 +1,65 @@
+/* Styles for the contact container */
+.contact-container {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: row; /* Arrange items horizontally by default */
+  justify-content: space-between; /* Distribute items evenly along the main axis */
+}
+
+/* Styles for images within the contact container */
+img {
+  width: 50%; /* Set image width to 50% of its container */
+}
+
+/* Styles for the main heading of the contact section */
+.conthead {
+  font-size: 4em; /* Large font size */
+  font-weight: bold; /* Bold font weight */
+  text-align: center; /* Center-align text */
+  margin-top: 40px; /* Top margin */
+  margin-bottom: 20px; /* Bottom margin */
+}
+
+/* Styles for the subheading of the contact section */
+.contsubhead {
+  font-size: 1.2em; /* Medium font size */
+  font-weight: bold; /* Bold font weight */
+  text-align: center; /* Center-align text */
+  margin-left: 30px; /* Left margin */
+  margin-right: 30px; /* Right margin */
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+  
+  img {
+    width: 100%; /* Set image width to 100% on smaller screens */
+  }
+}
+
+/* Styles for the available container section */
+.available-container {
+  width: 100%; /* Full width */
+  height: 50px; /* Fixed height */
+  overflow: hidden; /* Hide overflow content */
+  white-space: nowrap; /* Prevent text wrapping */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  background-color: white; /* White background color */
+  margin-bottom: 20px; /* Bottom margin */
+}
+
+/* Styles for the list of available platforms */
+.availablelist {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow wrapping */
+  justify-content: space-around; /* Distribute items evenly */
+  padding: 10px; /* Padding inside the element */
+  align-items: center; /* Align items vertically */
+}
+
+/* Hover effect for individual available platform links */
+.availablelist-indi:hover {
+  text-decoration: underline; /* Underline on hover */
+}
