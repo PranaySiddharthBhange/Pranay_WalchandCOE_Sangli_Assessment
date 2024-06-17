@@ -71,6 +71,7 @@ const ContactForm = () => {
             setIsSending(true); // Set sending state to true
 
             // Send email using EmailJS service
+            //API Keys can be passed as ENVIRONMENT VARIABLE usinf .env file(not implemented i will delete this later)
             emailjs.sendForm('service_jxybg2z', 'template_loqi7sm', e.target, 'uM4LMQmkW3F-e2DbV')
                 .then((result) => {
                     // Email sent successfully
