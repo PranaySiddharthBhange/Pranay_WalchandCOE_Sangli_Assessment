@@ -2,7 +2,7 @@
 
 ## Overview
 
-Handmade Heaven is a beautifully crafted website that showcases artisanal products, leveraging a modern tech stack to provide a seamless user experience. You can view the live website [https://handmadeheaven.vercel.app/](https://handmadeheaven.vercel.app/).
+Handmade Heaven is a beautifully crafted website that showcases handmade articrafts, leveraging a modern tech stack to provide a seamless user experience. You can view the live website [https://handmadeheaven.vercel.app/](https://handmadeheaven.vercel.app/).
 
 ### Quick Start
 
@@ -22,58 +22,55 @@ Handmade Heaven is a beautifully crafted website that showcases artisanal produc
 ## Project Structure
 
 The project follows a modular structure, with each component and section documented separately:
-
-```
-|-- public/           # Static assets and index.html
+```|-- public/           # Static assets and index.html
 |-- src/              # Source code directory
     |-- assets/       # Images, icons, and other assets
-    |-- [App.js](src/App.js)        # Main application component
-    |-- [index.js](src/index.js)      # Entry point
-    |-- [Homepage/](src/Homepage/)
-        |-- [Homepage.jsx](src/Homepage/Homepage.jsx)
-        |-- [Homepage.css](src/Homepage/Homepage.css)
-        |-- [Homepage.md](src/Homepage/Homepage.md)
-    |-- [Products/](src/Products/)
-        |-- [AllProducts.jsx](src/Products/AllProducts.jsx)
-        |-- [AllProducts.css](src/Products/AllProducts.css)
-        |-- [Products.jsx](src/Products/Products.jsx)
-        |-- [Products.css](src/Products/Products.css)
-        |-- [ProductCard.jsx](src/Products/ProductCard.jsx)
-        |-- [ProductCard.css](src/Products/ProductCard.css)
-        |-- [Products.md](src/Products/Products.md)
-    |-- [About/](src/About/)
-        |-- [About.jsx](src/About/About.jsx)
-        |-- [About.css](src/About/About.css)
-        |-- [About.md](src/About/About.md)
-    |-- [Contact/](src/Contact/)
-        |-- [FAQComponent/](src/Contact/FAQComponent/)
-             |-- [FAQComponent.jsx](src/Contact/FAQComponent/FAQComponent.jsx)
-             |-- [FAQComponent.css](src/Contact/FAQComponent/FAQComponent.css)
-             |-- [FAQComponent.md](src/Contact/FAQComponent/FAQComponent.md)
-        |-- [Form/](src/Contact/Form/)
-             |-- [Form.jsx](src/Contact/Form/Form.jsx)
-             |-- [Form.css](src/Contact/Form/Form.css)
-             |-- [Form.md](src/Contact/Form/Form.md)
-        |-- [Contact.jsx](src/Contact/Contact.jsx)
-        |-- [Contact.css](src/Contact/Contact.css)
-        |-- [Contact.md](src/Contact/Contact.md)
-    |-- [Global/](src/Global/)
-        |-- [Navbar.jsx](src/Global/Navbar.jsx)
-        |-- [Navbar.css](src/Global/Navbar.css)
-        |-- [Navbar.md](src/Global/Navbar.md)
-|-- [README.md](README.md)         # Global README file (you are here)
-|-- [Dockerfile](Dockerfile)        # Dockerfile for containerization
-|-- [package.json](package.json)      # Node.js dependencies and scripts
-|-- [.dockerignore](.dockerignore)     # Docker ignore file
-|-- [.gitignore](.gitignore)        # Git ignore file
+    |-- App.js        # Main application component
+    |-- index.js      # Entry point
+    |-- Homepage/
+        |-- Homepage.jsx
+        |-- Homepage.css
+        |-- Homepage.md
+    |-- Products/
+        |-- AllProducts.jsx
+        |-- AllProducts.css
+        |-- Products.jsx
+        |-- Products.css
+        |-- ProductCard.jsx
+        |-- ProductCard.css
+        |-- Products.md
+    |-- About/
+        |-- About.jsx
+        |-- About.css
+        |-- About.md
+    |-- Contact/
+        |-- FAQComponent/
+             |-- FAQComponent.jsx
+             |-- FAQComponent.css
+             |-- FAQComponent.md
+        |-- Form/
+             |-- Form.jsx
+             |-- Form.css
+             |-- Form.md
+        |-- Contact.jsx
+        |-- Contact.css
+        |-- Contact.md
+    |-- Global/
+        |-- Navbar.jsx
+        |-- Navbar.css
+        |-- Navbar.md
+|-- README.md         # Global README file (you are here)
+|-- Dockerfile        # Dockerfile for containerization
+|-- package.json      # Node.js dependencies and scripts
+|-- .dockerignore     # Docker ignore file
+|-- .gitignore        # Git ignore file
 ```
-
 ## Tasks Completed
 
-- **HTML/CSS:** Implemented responsive and visually appealing layouts.
-- **JavaScript:** Added interactive features and functionality.
-- **Responsiveness:** Ensured seamless adaptation across devices (desktop, tablet, mobile).
-- **Bonus Task:** Additional features and optimizations.
+- ✅️ **HTML/CSS:** Implemented responsive and visually appealing layouts.
+- ✅️**JavaScript:** Added interactive features and functionality.
+- ✅️ **Responsiveness:** Ensured seamless adaptation across devices (desktop, tablet, mobile).
+- ✅️ **Bonus Task (Done):** Additional features and optimizations.
 
 ## Features
 
